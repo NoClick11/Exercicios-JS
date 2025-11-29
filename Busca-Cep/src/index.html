@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício: ViaCEP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Consultor de CEP</h1>
+            <p>Consumindo a API ViaCEP</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="cep" placeholder="Digite o CEP (apenas números)" maxlength="8">
+            <button id="btnBuscar">Buscar Endereço</button>
+        </div>
+
+        <div id="resultado" class="result-box">
+            <div class="campo">
+                <span class="label">Rua:</span>
+                <span id="logradouro" class="valor">...</span>
+            </div>
+            <div class="campo">
+                <span class="label">Bairro:</span>
+                <span id="bairro" class="valor">...</span>
+            </div>
+            <div class="campo">
+                <span class="label">Cidade/UF:</span>
+                <span id="localidade" class="valor">...</span> / <span id="uf" class="valor">...</span>
+            </div>
+        </div>
+        
+        <div id="erro" class="error-msg" style="display: none;"></div>
+    </div>
+
+</body>
+</html>
