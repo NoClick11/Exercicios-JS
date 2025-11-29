@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor R$ para US$</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="converter-card">
+      <h1>Conversor Dólar</h1>
+      <p>Cotação em tempo real</p>
+
+      <div class="input-group">
+        <label>Valor em Reais (R$):</label>
+        <input type="number" id="valorReal" placeholder="Ex: 100" />
+      </div>
+
+      <button id="btnConverter">Converter</button>
+
+      <div id="resultadoArea" style="display: none">
+        <p>Cotação Atual: <span id="cotacao">...</span></p>
+        <h2>Total: US$ <span id="valorDolar">0.00</span></h2>
+      </div>
+    </div>
+  </body>
+</html>

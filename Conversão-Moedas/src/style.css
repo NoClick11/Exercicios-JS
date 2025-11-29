@@ -1,0 +1,62 @@
+body {
+    background-color: #10b981; /* Verde Dinheiro */
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.converter-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    width: 320px;
+    text-align: center;
+}
+
+h1 { color: #064e3b; margin-bottom: 5px; }
+p { color: #6b7280; font-size: 0.9rem; }
+
+.input-group {
+    margin: 20px 0;
+    text-align: left;
+}
+
+label { font-weight: bold; display: block; margin-bottom: 5px; color: #374151; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Importante para o padding não estourar a largura */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #059669;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover { background-color: #047857; }
+
+#resultadoArea {
+    margin-top: 20px;
+    background: #ecfdf5;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #a7f3d0;
+}
+
+h2 { color: #065f46; margin: 10px 0 0 0; }
