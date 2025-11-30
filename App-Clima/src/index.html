@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Tempo JS</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="card">
+        <div class="search">
+            <input type="text" id="cidadeInput" placeholder="Digite o nome da cidade">
+            <button id="btnBuscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="error" style="display: none;">
+            <p>Cidade não encontrada!</p>
+        </div>
+
+        <div class="weather" id="weatherData" style="display: none;">
+            <img src="https://openweathermap.org/img/wn/04d@2x.png" class="weather-icon" id="icone">
+            <h1 class="temp"><span id="temperatura">0</span>°c</h1>
+            <h2 class="city" id="cidade">Cidade</h2>
+            
+            <div class="details">
+                <div class="col">
+                    <i class="fa-solid fa-water"></i>
+                    <div>
+                        <p class="humidity"><span id="umidade">0</span>%</p>
+                        <p>Umidade</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p class="wind"><span id="vento">0</span> km/h</p>
+                        <p>Vento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
