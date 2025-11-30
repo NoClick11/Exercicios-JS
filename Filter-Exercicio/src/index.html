@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Final - Busca Rápida</title>
+    <style>
+        body { font-family: sans-serif; padding: 30px; background: #f0f2f5; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; }
+        
+        input { 
+            width: 100%; padding: 15px; margin-bottom: 20px; 
+            border: 2px solid #ddd; border-radius: 25px; 
+            font-size: 16px; outline: none; box-sizing: border-box;
+        }
+        input:focus { border-color: #007bff; }
+
+        ul { list-style: none; padding: 0; }
+        li { 
+            background: #fff; border-bottom: 1px solid #eee; 
+            padding: 15px; display: flex; justify-content: space-between; 
+            align-items: center;
+        }
+        li:last-child { border-bottom: none; }
+        li strong { font-size: 1.1rem; color: #333; }
+        li span { color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Diretório de Usuários</h2>
+        
+        <input type="text" id="inputBusca" placeholder="Digite um nome para filtrar...">
+        
+        <ul id="listaUsuarios"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
