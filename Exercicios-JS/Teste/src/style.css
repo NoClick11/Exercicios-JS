@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: gray;
+  padding: 40px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .input {
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+  max-width: 1200px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 300px;
+  box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.completed {
+  border-bottom: green 6px solid;
+}
+
+.uncompleted {
+  border-bottom: orange 6px solid;
+}
+
+.card:hover {
+  transform: translateY(4px);
+}
+
+.input {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
